@@ -1,5 +1,6 @@
 <template>
-	<div class="flex items-baseline text-2xl mx-auto justify-center font-bold p-5 w-[75%] h-20 align-center">
+	<div
+		class="flex items-baseline text-2xl mx-auto justify-center font-bold p-5 w-[75%] h-20 align-center">
 		<!-- My Name -->
 		<ULink class="text-2xl" to="/">
 			<span class="text-name-blue">Harsh</span>
@@ -16,7 +17,7 @@
 			</span>
 			<span class="text-name-blue">Jain</span>
 		</ULink>
-
+	
 		<!-- Navigation Links -->
 		<div class="flex text-off-white">
 			<ULink v-for="link in NAV_LINKS" :key="link.name" :to="link.to">
@@ -33,8 +34,9 @@ import { NAV_LINKS } from './constants';
 export default defineComponent({
 	name: 'TopNavigation',
 	setup() {
+
 		return { NAV_LINKS };
 	}
-})
+});
 
 </script>

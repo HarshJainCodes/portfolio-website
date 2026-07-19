@@ -1,11 +1,13 @@
 // @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs'
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt(
 	// Your custom configs here
 	{
 		rules: {
 			'indent': ['error', 'tab'],
+			'eol-last': ['error', 'always'],
+			semi: ['error', 'always'],
 			'vue/html-indent': ['error', 'tab'],
 			'vue/no-async-in-computed-properties': ['error'],
 			'vue/no-mutating-props': ['error'],
@@ -22,4 +24,4 @@ export default withNuxt(
 			'vue/attribute-hyphenation': ['error', 'always'],
 		}
 	}
-)
+);

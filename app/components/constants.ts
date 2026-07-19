@@ -15,4 +15,4 @@ export const NAV_LINKS = [
 		name: 'Resume',
 		to: '/resume',
 	}
-]
+];

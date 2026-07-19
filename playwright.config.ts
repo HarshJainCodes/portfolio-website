@@ -1,6 +1,6 @@
-import { fileURLToPath } from 'node:url'
-import { defineConfig, devices } from '@playwright/test'
-import type { ConfigOptions } from '@nuxt/test-utils/playwright'
+import { fileURLToPath } from 'node:url';
+import { defineConfig, devices } from '@playwright/test';
+import type { ConfigOptions } from '@nuxt/test-utils/playwright';
 
 export default defineConfig<ConfigOptions>({
 	testDir: './tests',
@@ -21,4 +21,4 @@ export default defineConfig<ConfigOptions>({
 			use: { ...devices['Desktop Chrome'] },
 		},
 	],
-})
+});
