@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
-
 @import "tailwindcss";
 @import "@nuxt/ui";
 
 
 @theme {
-  --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
   --color-name-blue: #809FFF;
   --color-off-white: #E3E6E8;
+  /* Applies to all selected text on the page */
+  --color-custom-grey: #0d0f12
+}
+
+html {
+  /* scrollbar-gutter: stable; */
 }
 
 @layer  base {
@@ -16,6 +20,6 @@
     }
 }
 
-.disable-select {
-    user-select: none;
+::selection {
+  background-color: #3a3a4b;
 }

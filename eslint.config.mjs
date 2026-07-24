@@ -1,6 +1,6 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs';
-
+	
 export default withNuxt(
 	// Your custom configs here
 	{
@@ -22,6 +22,14 @@ export default withNuxt(
 			'vue/require-slots-as-functions': ['error'],
 			'vue/require-toggle-inside-transition': ['error'],
 			'vue/attribute-hyphenation': ['error', 'always'],
+			'vue/max-attributes-per-line': ['error', {
+				singleline: {
+					max: 2
+				},
+				multiline: {
+					max: 1
+				}
+			}]
 		}
 	}
 );
